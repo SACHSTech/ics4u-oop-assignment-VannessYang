@@ -11,7 +11,7 @@ public class Customer extends Human{
 
   public Customer(String fname, String lname, int phoneNumber, String addr, int card, int cvv){
     super(fname, lname);
-    this.number = phoneNumber;
+    this.phone = phoneNumber;
     this.address = addr;
     this.cardNumber = card;
     this.CVV = cvv;
