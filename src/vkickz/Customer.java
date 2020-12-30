@@ -1,6 +1,6 @@
-package assignment;
+package vkickz;
 
-import assignment.*;
+import vkickz.*;
 
 public class Customer extends Human{
   

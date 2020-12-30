@@ -1,4 +1,4 @@
-package assignment;
+package vkickz;
 
 /**
 * super class
@@ -22,4 +22,5 @@ public class Human{
   public String getLastName(){
     return lastName;
   }
+  
 }
