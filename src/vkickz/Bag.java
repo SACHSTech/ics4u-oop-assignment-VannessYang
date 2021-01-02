@@ -7,7 +7,7 @@ public class Bag extends Item{
   private String bagType;
   private String season;
 
-  public Shoe(String item, String theBrand, String colour, double thePrice, int theStock, String bag, String theSeason){
+  public Bag(String item, String theBrand, String colour, double thePrice, int theStock, String bag, String theSeason){
     super(item, theBrand, colour, thePrice, theStock);
     this.bagType = bag;
     this.season = theSeason;
@@ -17,7 +17,7 @@ public class Bag extends Item{
     return bagType;
   }
 
-  public Sting getSeason(){
+  public String getSeason(){
     return season;
   }
   

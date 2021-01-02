@@ -3,34 +3,22 @@ package vkickz;
 import vkickz.*;
 
 public class Customer extends Human{
-  
-  private int phone;
-  private String address;
-  private int cardNumber;
-  private int CVV;
 
-  public Customer(String fname, String lname, int phoneNumber, String addr, int card, int cvv){
+  private String address;
+  private String cardNumber;
+
+  public Customer(String fname, String lname, String addr, String card){
     super(fname, lname);
-    this.phone = phoneNumber;
     this.address = addr;
     this.cardNumber = card;
-    this.CVV = cvv;
-  }
-
-  public int getPhone(){
-    return phone;
   }
 
   public String getAddress(){
     return address;
   }
 
-  public int getCardNumber(){
+  public String getCardNumber(){
     return cardNumber;
-  }
-
-  public int getCVV(){
-    return CVV;
-  }
+  }  
 
 }

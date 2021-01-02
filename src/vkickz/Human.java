@@ -1,15 +1,9 @@
 package vkickz;
 
-/**
-* super class
-*/
 public class Human{
   private String firstName;
   private String lastName;
 
-  /*
-  * constructor
-  */
   public Human(String fname, String lname){
     firstName = fname;
     lastName = lname;
@@ -22,5 +16,5 @@ public class Human{
   public String getLastName(){
     return lastName;
   }
-  
+
 }

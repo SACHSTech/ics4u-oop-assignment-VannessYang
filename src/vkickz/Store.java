@@ -5,14 +5,17 @@ import java.util.ArrayList;
 
 public class Store {
   
-  private ArrayList<Customer> customer;
+  private Customer customer[][];
   private Staff staff;
-  private Item item;
+  private Bag bag;
+  private Shoe shoe;
 
-  public Store(Staff theStaff, Item theItem){
+  public Store(Staff theStaff, Bag theBag, Shoe theShoe, int numCustomer){
     this.staff = theStaff;
-    this.item = theItem;
-    customer = new ArrayList<Customer>();
+    this.bag = theBag;
+    this.shoe = theShoe;
+    
+    this.customer = new Customer[numCustomer][4];
   }
 
 }
