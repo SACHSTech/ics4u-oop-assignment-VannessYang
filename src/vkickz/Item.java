@@ -6,14 +6,12 @@ public class Item{
   private String brand;
   private String colourway;
   private double price;
-  private int stock;
 
-  public Item(String item, String theBrand, String colour, double thePrice, int theStock){
+  public Item(String item, String theBrand, String colour, double thePrice){
     this.itemType = item;
     this.brand = theBrand;
     this.colourway = colour;
     this.price = thePrice;
-    this.stock = theStock;
   }
 
   public String getItemType(){
@@ -30,10 +28,6 @@ public class Item{
 
   public double getPrice(){
     return price;
-  }
-
-  public int getStock(){
-    return stock;
   }
 
 }

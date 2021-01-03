@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Store {
   
-  private Customer customer[][];
+  private ArrayList<Customer> customer;
   private Staff staff;
   private Bag bag;
   private Shoe shoe;
@@ -15,7 +15,7 @@ public class Store {
     this.bag = theBag;
     this.shoe = theShoe;
     
-    this.customer = new Customer[numCustomer][4];
+    customer = new ArrayList<Customer>();
   }
 
 }
