@@ -28,10 +28,34 @@ public class StoreMain{
     // ArrayList for customers
     ArrayList<Customer> customers = new ArrayList<Customer>();
 
+    // Creating new staff objects 
+    Staff boss = new Staff("Vanness", "Yang", "founder", "5 years");
+    Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
+
+    // Creating new bag object
+    Bag fanny = new Bag("bag", "Supreme", "red", 249.99, "waist bag", "FW 2018");
+
+    // Creating new shoe object
+    Shoe yeezy = new Shoe("shoe", "Yeezy", "Carbon", 499.99, 10.5, "350 V2");
+    // Welcoming
+    System.out.print("\033[H\033[2J");
+    System.out.println("Welcome to VKickz!");
+    System.out.println("");
+    System.out.println(boss);
+    System.out.println("");
+    System.out.println(host);
+    System.out.println("");
+    System.out.println("Press Enter when you want to move on to account creation!");
+    next = key.readLine();
+
+
     // Asking for the customer's details 
     // Loop ends when the user inputs nothing as the first name 
     while(!fname.equals("")){
       System.out.print("\033[H\033[2J");
+      System.out.println("ACCOUNT CREATION");
+      System.out.println("Enter blank for the first name if there are no more customers.");
+      System.out.println("");
       System.out.print("First Name: ");
       fname = key.readLine();
       if(!fname.equals("")){
@@ -54,24 +78,8 @@ public class StoreMain{
     // Getting the total number of customers
     numCustomer = Customer.getTotalCustomers();
 
-    // Creating new staff objects 
-    Staff boss = new Staff("Vanness", "Yang", "founder", "5 years");
-    Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
-
-    // Creating new bag object
-    Bag fanny = new Bag("bag", "Supreme", "red", 249.99, "waist bag", "FW 2018");
-
-    // Creating new shoe object
-    Shoe yeezy = new Shoe("shoe", "Yeezy", "Carbon", 499.99, 10.5, "350 V2");
-
     // Introduction
     System.out.print("\033[H\033[2J");
-    System.out.println("Welcome to VKickz!");
-    System.out.println("");
-    System.out.println(boss);
-    System.out.println("");
-    System.out.println(host);
-    System.out.println("");
     System.out.println("Today, we have a shoe and a bag for auction! We will start with the shoe!");
     System.out.println("");
     System.out.println("Press Enter when you want to move on!");
