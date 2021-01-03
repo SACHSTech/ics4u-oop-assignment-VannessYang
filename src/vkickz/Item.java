@@ -21,18 +21,30 @@ public class Item{
     this.price = thePrice;
   }
 
+  /**
+  * Getter for the item type 
+  */
   public String getItemType(){
     return itemType;
   }
 
+  /**
+  * Getter for the item brand 
+  */
   public String getBrand(){
     return brand;
   }
 
+  /**
+  * Getter for the item colourway
+  */
   public String getColourway(){
     return colourway;
   }
 
+  /**
+  * Getter for the item price
+  */
   public double getPrice(){
     return price;
   }
