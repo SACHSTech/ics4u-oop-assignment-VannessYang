@@ -15,8 +15,9 @@ public class Bag extends Item{
   * Bag Constructor  
   */
   public Bag(String item, String theBrand, String colour, double thePrice, String bag, String theSeason){
-    // Gets variables from superclass 
+    // Gets variables from Item superclass 
     super(item, theBrand, colour, thePrice);
+    
     this.bagType = bag;
     this.season = theSeason;
   }
