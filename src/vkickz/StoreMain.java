@@ -19,16 +19,15 @@ public class StoreMain{
     double bid; 
     double highestBid = 0;
     int highestCount = 0; 
+    int round = 1;
 
     // ArrayList for customers
     ArrayList<Customer> customers = new ArrayList<Customer>();
 
-    //System.out.print("How many customers are participating in the auction?: ");
-    //numCustomer = Integer.parseInt(key.readLine());
-
     // Asking for the customer's details 
     // Loop ends when the user inputs nothing as the first name 
     while(!fname.equals("")){
+      System.out.print("\033[H\033[2J");
       System.out.print("First Name: ");
       fname = key.readLine();
       if(!fname.equals("")){
@@ -39,51 +38,81 @@ public class StoreMain{
         System.out.print("Card Number: ");
         cardNumber = key.readLine();
 
-        
+        // Creates a new customer object 
         Customer customer = new Customer(fname, lname, address, cardNumber);
-      
+
+        // Adds the customer object to the ArrayList
         customers.add(customer);
+
       }
     }
 
+    // Getting the total number of customers
     numCustomer = Customer.getTotalCustomers();
-    // System.out.println(numCustomer);
 
-    //System.out.println(customers.get(1));
-
+    // Creating new staff objects 
     Staff boss = new Staff("Vanness", "Yang", "founder", "5 years");
     Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
+
+    // Creating new bag object
     Bag fanny = new Bag("bag", "Supreme", "red", 249.99, "waist bag", "FW 2018");
+
+    // Creating new shoe object
     Shoe yeezy = new Shoe("shoe", "Yeezy", "Carbon", 499.99, 10.5, "350 V2");
 
+    // Introduction
+    System.out.print("\033[H\033[2J");
     System.out.println("Welcome to VKickz!");
+    System.out.println("");
     System.out.println(boss);
     System.out.println(host);
+    System.out.println("");
     System.out.println("Today, we have a shoe and a bag for auction! We will start with the shoe!");
-    
+    //TimeUnit.SECONDS.sleep(3);
+    System.out.print("\033[H\033[2J");
+    System.out.println("Here are the rules...");
+    System.out.println("You must enter a bid higher than the starting price and the other bids.");
+    System.out.println("If you would like to skip, enter 0 as the input.");
+    System.out.print("\033[H\033[2J");
+    System.out.println("We will now begin the auction with the shoe!");
+    System.out.println("");
+
     // Shoe Auction  
     System.out.println(yeezy);
 
+    // Presetting the highest bid 
     highestBid = 499.99;
 
-    while(noBid < numCustomer - 1){
+    while(noBid < numCustomer){
+      // Resetting the number of no bids to 0
       noBid = 0;
+
+      // Displaying the round number and highest bid
+      System.out.print("\033[H\033[2J");
+      System.out.println("ROUND " + round);
+      System.out.println("The highest bid is " + highestBid);
+      System.out.println("");
       
+      // Loop to keep asking the user for bids
       for(count = 1; count <= numCustomer; count++){
         System.out.println(customers.get(count - 1));
         System.out.print("Bid: $");
         bid = Double.parseDouble(key.readLine());
+        System.out.println("");
         if(bid > highestBid){
           highestBid = bid;
           highestCount = count - 1; 
-          System.out.println("The highest bid is " + highestBid);
         }else{
           noBid = noBid + 1; 
         }
       }
 
+      // Increasing the round number
+      round++;
+
     }
 
+    // Printing out the results
     System.out.println(customers.get(highestCount) + " is the winner! Your card will be charged automatically and you will have your order shipped to you!");
 
     // Bag Auction  
