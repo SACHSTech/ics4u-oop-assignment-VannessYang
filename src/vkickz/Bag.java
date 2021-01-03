@@ -2,6 +2,9 @@ package vkickz;
 
 import vkickz.*;
 
+/**
+* Bag Constructor 
+*/
 public class Bag extends Item{
   
   private String bagType;

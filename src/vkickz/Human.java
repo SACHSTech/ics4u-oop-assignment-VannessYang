@@ -1,12 +1,17 @@
 package vkickz;
 
 /**
-* super class
+* Human Super Class
 */
 public class Human{
+
+  // Instance Variables
   private String firstName;
   private String lastName;
 
+  /**
+  * Human Constructor 
+  */
   public Human(String fname, String lname){
     firstName = fname;
     lastName = lname;

@@ -6,6 +6,7 @@ public class Staff extends Human{
   private String title;
   private String experience;
 
+  
   public Staff(String fname, String lname, String jobTitle, String jobExperience){
     super(fname, lname);
     this.title = jobTitle;
