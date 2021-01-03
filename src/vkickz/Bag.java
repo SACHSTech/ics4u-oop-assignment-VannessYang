@@ -12,12 +12,16 @@ public class Bag extends Item{
   private String season;
 
   /**
-  * Bag Constructor  
+  * Constructor - creates a new bag instance
+  * @param item - the item type 
+  * @param theBrand - the brand of the bag 
+  * @param colour - the colour of the bag 
+  * @param thePrice - the price of the bag  
+  * @param bag - the bag type 
+  * @param theSeason - the season of the bag 
   */
   public Bag(String item, String theBrand, String colour, double thePrice, String bag, String theSeason){
-    // Gets variables from Item superclass 
     super(item, theBrand, colour, thePrice);
-    
     this.bagType = bag;
     this.season = theSeason;
   }
@@ -37,7 +41,7 @@ public class Bag extends Item{
   }
 
   /**
-  * toString method to return values of variables 
+  * toString to return values of variables 
   */
   public String toString(){
     return "The " + this.getItemType() + " available is the " + this.getBrand() + " " + season + " " + this.getColourway() + " " + bagType + ". The starting price is $" + this.getPrice();

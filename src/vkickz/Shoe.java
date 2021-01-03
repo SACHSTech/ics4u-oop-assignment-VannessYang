@@ -12,12 +12,16 @@ public class Shoe extends Item{
   private String model;
 
   /**
-  * Shoe Constructor 
+  * Constructor - creates a new shoe instance
+  * @param item - the type of the item
+  * @param theBrand - the brand of the shoe
+  * @param colour - the colour of the shoe
+  * @param thePrice - the price of the shoe
+  * @param theSize - the size of the shoe
+  * @param theModel - the model of the shoe 
   */
   public Shoe(String item, String theBrand, String colour, double thePrice, double theSize, String theModel){
-    // Gets variables from Item superclass
     super(item, theBrand, colour, thePrice);
-
     this.size = theSize;
     this.model = theModel;
   }

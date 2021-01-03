@@ -10,7 +10,9 @@ public class Human{
   private String lastName;
 
   /**
-  * Human Constructor  
+  * Constructor - creates a new human instance
+  * @param fname - the human first name
+  * @param lname - the human last name
   */
   public Human(String fname, String lname){
     firstName = fname;
@@ -18,14 +20,14 @@ public class Human{
   }
 
   /**
-  * Getter for First Name 
+  * Getter for Human first name 
   */
   public String getFirstName(){
     return firstName;
   }
 
   /**
-  * Getter for Last Name  
+  * Getter for Human last name   
   */
   public String getLastName(){
     return lastName;

@@ -15,12 +15,14 @@ public class Customer extends Human{
   private static int totalCustomers = 0;
 
   /**
-  * Customer Constructor 
+  * Constructor - creates a new customer instance
+  * @param fname - the customer first name
+  * @param lname - the customer last name
+  * @param addr - the customer address 
+  * @param card - the customer card number 
   */
   public Customer(String fname, String lname, String addr, String card){
-    // Gets variables from Human superclass
     super(fname, lname);
-
     this.address = addr;
     this.cardNumber = card;
 

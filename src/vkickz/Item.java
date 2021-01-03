@@ -12,7 +12,11 @@ public class Item{
   private double price;
 
   /**
-  * Item Constructor
+  * Constructor - creates a new item instance
+  * @param item - the type of item 
+  * @param theBrand - the brand of the item
+  * @param colour - the colour of the item
+  * @param thePrice - the price of the item  
   */
   public Item(String item, String theBrand, String colour, double thePrice){
     this.itemType = item;
