@@ -27,7 +27,11 @@ public class StoreMain{
     Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
 
     System.out.print("\033[H\033[2J");
-    
+    System.out.println("____   ________  __.____________  ____  __.__________\r\n" + 
+				"\\   \\ /   /    |/ _|   \\_   ___ \\|    |/ _|\\____    /\r\n" + 
+				" \\   Y   /|      < |   /    \\  \\/|      <    /     / \r\n" + 
+				"  \\     / |    |  \\|   \\     \\___|    |  \\  /     /_ \r\n" + 
+				"   \\___/  |____|__ \\___|\\______  /____|__ \\/_______ \\\r\n");
     System.out.println("");
     System.out.println("Welcome to VKickz!");
     System.out.println("");
@@ -230,7 +234,11 @@ public class StoreMain{
     String next;
 
     System.out.print("\033[H\033[2J");
-    
+    System.out.println("____   ________  __.____________  ____  __.__________\r\n" + 
+				"\\   \\ /   /    |/ _|   \\_   ___ \\|    |/ _|\\____    /\r\n" + 
+				" \\   Y   /|      < |   /    \\  \\/|      <    /     / \r\n" + 
+				"  \\     / |    |  \\|   \\     \\___|    |  \\  /     /_ \r\n" + 
+				"   \\___/  |____|__ \\___|\\______  /____|__ \\/_______ \\\r\n");
     System.out.println("");
     System.out.println("That concludes the auction! Thank you for participating! We hope to see you again!");
     System.out.println("");
