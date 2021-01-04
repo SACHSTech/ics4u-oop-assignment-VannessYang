@@ -5,17 +5,20 @@ import java.io.*;
 import java.util.ArrayList;
 
 /**
-* Store Main Class  
+* OOP Assignment VKICKZ Auction Simulation (StoreMain Class)
+* @atuhor: V. Yang
+* 
 */
 public class StoreMain{
   public static void main(String[] args) throws IOException{
-
     welcome();
     auction();
     closing();
-
   }
 
+  /**
+  * Displays the logo and the welcoming screen
+  */
   public static void welcome() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
 
@@ -27,12 +30,16 @@ public class StoreMain{
     Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
 
     System.out.print("\033[H\033[2J");
+    
+    // Logo
     System.out.println("____   ________  __.____________  ____  __.__________\r\n" + 
 				"\\   \\ /   /    |/ _|   \\_   ___ \\|    |/ _|\\____    /\r\n" + 
 				" \\   Y   /|      < |   /    \\  \\/|      <    /     / \r\n" + 
 				"  \\     / |    |  \\|   \\     \\___|    |  \\  /     /_ \r\n" + 
 				"   \\___/  |____|__ \\___|\\______  /____|__ \\/_______ \\\r\n");
     System.out.println("");
+
+    // Welcome
     System.out.println("Welcome to VKickz!");
     System.out.println("");
     System.out.println(boss);
@@ -41,8 +48,12 @@ public class StoreMain{
     System.out.println("");
     System.out.println("Press Enter when you want to move on to account creation!");
     next = key.readLine();
+
   }
 
+  /**
+  * Simulates an auction for two items
+  */
   public static void auction() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
     
@@ -71,14 +82,15 @@ public class StoreMain{
 
     // Asking for the customer's details 
     // Loop ends when the user inputs nothing as the first name 
-    while(!fname.equals("")){
+    while (!fname.equals("")) {
       System.out.print("\033[H\033[2J");
       System.out.println("ACCOUNT CREATION");
       System.out.println("Enter blank for the first name if there are no more customers.");
       System.out.println("");
       System.out.print("First Name: ");
       fname = key.readLine();
-      if(!fname.equals("")){
+      
+      if (!fname.equals("")) {
         System.out.print("Last Name: ");
         lname = key.readLine();
         System.out.print("Address: ");
@@ -93,6 +105,7 @@ public class StoreMain{
         customers.add(customer);
 
       }
+
     }
 
     // Getting the total number of customers
@@ -129,7 +142,7 @@ public class StoreMain{
     // Presetting the highest bid 
     highestBid = 499.99;
 
-    while(noBid < numCustomer){
+    while (noBid < numCustomer) {
       // Resetting the number of no bids to 0
       noBid = 0;
 
@@ -140,17 +153,19 @@ public class StoreMain{
       System.out.println("");
       
       // Loop to keep asking the user for bids
-      for(count = 1; count <= numCustomer; count++){
+      for (count = 1; count <= numCustomer; count++) {
         System.out.println(customers.get(count - 1));
         System.out.print("Bid: $");
         bid = Double.parseDouble(key.readLine());
         System.out.println("");
-        if(bid > highestBid){
+        
+        if (bid > highestBid) {
           highestBid = bid;
           highestCount = count - 1; 
         }else{
           noBid = noBid + 1; 
         }
+
       }
 
       // Increasing the round number
@@ -158,9 +173,10 @@ public class StoreMain{
 
     }
 
-    // Printing out the results of the shoe auction 
     System.out.print("\033[H\033[2J");
-    if(highestBid > 499.99){
+
+    // Printing out the results of the shoe auction 
+    if (highestBid > 499.99) {
       System.out.println(customers.get(highestCount) + " is the winner! Your card will be charged automatically and you will have your order shipped to you!");
     }else{
       System.out.println("There is no winner.");
@@ -185,7 +201,7 @@ public class StoreMain{
     highestBid = 249.99;
     round = 1;
 
-    while(noBid < numCustomer){
+    while (noBid < numCustomer) {
       // Resetting the number of no bids to 0
       noBid = 0;
 
@@ -196,17 +212,19 @@ public class StoreMain{
       System.out.println("");
       
       // Loop to keep asking the user for bids
-      for(count = 1; count <= numCustomer; count++){
+      for (count = 1; count <= numCustomer; count++) {
         System.out.println(customers.get(count - 1));
         System.out.print("Bid: $");
         bid = Double.parseDouble(key.readLine());
         System.out.println("");
-        if(bid > highestBid){
+        
+        if (bid > highestBid) {
           highestBid = bid;
           highestCount = count - 1; 
         }else{
           noBid = noBid + 1; 
         }
+
       }
 
       // Increasing the round number
@@ -214,9 +232,10 @@ public class StoreMain{
 
     }
 
-    // Printing out the results of the bag auction 
     System.out.print("\033[H\033[2J");
-    if(highestBid > 249.99){
+    
+    // Printing out the results of the bag auction 
+    if (highestBid > 249.99) {
       System.out.println(customers.get(highestCount) + " is the winner! Your card will be charged automatically and you will have your order shipped to you!");
     }else{
       System.out.println("There is no winner.");
@@ -226,19 +245,28 @@ public class StoreMain{
     System.out.println("");
     System.out.println("Press Enter when you want to move on!");
     next = key.readLine();
+
   }
 
+  /**
+  * Displays the logo and the closing screen
+  */
   public static void closing() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
 
+    // Variables
     String next;
 
     System.out.print("\033[H\033[2J");
+
+    // Logo
     System.out.println("____   ________  __.____________  ____  __.__________\r\n" + 
 				"\\   \\ /   /    |/ _|   \\_   ___ \\|    |/ _|\\____    /\r\n" + 
 				" \\   Y   /|      < |   /    \\  \\/|      <    /     / \r\n" + 
 				"  \\     / |    |  \\|   \\     \\___|    |  \\  /     /_ \r\n" + 
 				"   \\___/  |____|__ \\___|\\______  /____|__ \\/_______ \\\r\n");
+
+    // Conclusion 
     System.out.println("");
     System.out.println("That concludes the auction! Thank you for participating! We hope to see you again!");
     System.out.println("");

@@ -1,7 +1,9 @@
 package vkickz;
 
 /**
-* Human Super Class
+* OOP Assignment VKICKZ Auction Simulation (Human Superclass)
+* @atuhor: V. Yang
+* 
 */
 public class Human{
 

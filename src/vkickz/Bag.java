@@ -3,7 +3,9 @@ package vkickz;
 import vkickz.*;
 
 /**
-* Bag Subclass
+* OOP Assignment VKICKZ Auction Simulation (Bag Subclass)
+* @atuhor: V. Yang
+* 
 */
 public class Bag extends Item{
   

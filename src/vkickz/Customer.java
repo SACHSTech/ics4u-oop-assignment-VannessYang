@@ -3,7 +3,9 @@ package vkickz;
 import vkickz.*;
 
 /**
-* Customer Subclass  
+* OOP Assignment VKICKZ Auction Simulation (Customer Subclass)
+* @atuhor: V. Yang
+* 
 */
 public class Customer extends Human{
 

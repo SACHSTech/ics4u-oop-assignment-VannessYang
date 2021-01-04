@@ -4,7 +4,9 @@ import vkickz.*;
 import java.util.ArrayList;
 
 /**
-* Store class
+* OOP Assignment VKICKZ Auction Simulation (Store Class)
+* @atuhor: V. Yang
+* 
 */
 public class Store {
   

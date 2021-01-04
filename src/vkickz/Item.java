@@ -1,7 +1,9 @@
 package vkickz;
 
 /**
-* Item Super Class
+* OOP Assignment VKICKZ Auction Simulation (Item Superclass)
+* @atuhor: V. Yang
+* 
 */
 public class Item{
   

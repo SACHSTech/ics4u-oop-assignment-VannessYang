@@ -3,7 +3,9 @@ package vkickz;
 import vkickz.*;
 
 /**
-* Shoe Subclass
+* OOP Assignment VKICKZ Auction Simulation (Shoe Subclass)
+* @atuhor: V. Yang
+* 
 */
 public class Shoe extends Item{
   

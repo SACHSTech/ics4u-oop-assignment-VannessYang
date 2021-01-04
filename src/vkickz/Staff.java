@@ -3,7 +3,9 @@ package vkickz;
 import vkickz.*;
 
 /**
-* Staff Subclass
+* OOP Assignment VKICKZ Auction Simulation (Staff Subclass)
+* @atuhor: V. Yang
+* 
 */
 public class Staff extends Human{
   
