@@ -29,4 +29,6 @@ public class Store {
     customer = new ArrayList<Customer>();
   }
 
+  public 
+
 }

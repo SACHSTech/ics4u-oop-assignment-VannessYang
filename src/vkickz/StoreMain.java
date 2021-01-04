@@ -37,6 +37,7 @@ public class StoreMain{
 
     // Creating new shoe object
     Shoe yeezy = new Shoe("shoe", "Yeezy", "Carbon", 499.99, 10.5, "350 V2");
+    
     // Welcoming
     System.out.print("\033[H\033[2J");
     System.out.println("Welcome to VKickz!");
@@ -47,7 +48,6 @@ public class StoreMain{
     System.out.println("");
     System.out.println("Press Enter when you want to move on to account creation!");
     next = key.readLine();
-
 
     // Asking for the customer's details 
     // Loop ends when the user inputs nothing as the first name 
