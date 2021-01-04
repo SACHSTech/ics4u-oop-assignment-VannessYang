@@ -28,7 +28,4 @@ public class Store {
     // Initializing the customer list 
     customer = new ArrayList<Customer>();
   }
-
-  public 
-
 }
