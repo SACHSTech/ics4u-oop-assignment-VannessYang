@@ -9,8 +9,39 @@ import java.util.ArrayList;
 */
 public class StoreMain{
   public static void main(String[] args) throws IOException{
+
+    welcome();
+    auction();
+    closing();
+
+  }
+
+  public static void welcome() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
 
+    // Variables
+    String next; 
+
+    // Creating new staff objects 
+    Staff boss = new Staff("Vanness", "Yang", "founder", "5 years");
+    Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
+
+    System.out.print("\033[H\033[2J");
+    
+    System.out.println("");
+    System.out.println("Welcome to VKickz!");
+    System.out.println("");
+    System.out.println(boss);
+    System.out.println("");
+    System.out.println(host);
+    System.out.println("");
+    System.out.println("Press Enter when you want to move on to account creation!");
+    next = key.readLine();
+  }
+
+  public static void auction() throws IOException{
+    BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
+    
     // Variables
     int numCustomer = 0;
     int count = 0;
@@ -28,26 +59,11 @@ public class StoreMain{
     // ArrayList for customers
     ArrayList<Customer> customers = new ArrayList<Customer>();
 
-    // Creating new staff objects 
-    Staff boss = new Staff("Vanness", "Yang", "founder", "5 years");
-    Staff host = new Staff("Jaysse", "Lopez", "auction host", "7 years");
-
     // Creating new bag object
     Bag fanny = new Bag("bag", "Supreme", "red", 249.99, "waist bag", "FW 2018");
 
     // Creating new shoe object
     Shoe yeezy = new Shoe("shoe", "Yeezy", "Carbon", 499.99, 10.5, "350 V2");
-    
-    // Welcoming
-    System.out.print("\033[H\033[2J");
-    System.out.println("Welcome to VKickz!");
-    System.out.println("");
-    System.out.println(boss);
-    System.out.println("");
-    System.out.println(host);
-    System.out.println("");
-    System.out.println("Press Enter when you want to move on to account creation!");
-    next = key.readLine();
 
     // Asking for the customer's details 
     // Loop ends when the user inputs nothing as the first name 
@@ -206,13 +222,20 @@ public class StoreMain{
     System.out.println("");
     System.out.println("Press Enter when you want to move on!");
     next = key.readLine();
+  }
 
-    //Closing 
+  public static void closing() throws IOException{
+    BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
+
+    String next;
+
     System.out.print("\033[H\033[2J");
+    
+    System.out.println("");
     System.out.println("That concludes the auction! Thank you for participating! We hope to see you again!");
     System.out.println("");
     System.out.println("Press Enter to exit!");
     next = key.readLine();
-
   }
+
 }
