@@ -87,15 +87,15 @@ public class StoreMain{
       System.out.println("ACCOUNT CREATION");
       System.out.println("Enter blank for the first name if there are no more customers.");
       System.out.println("");
-      System.out.print("First Name: ");
+      System.out.print("First Name (Ex. Vanness): ");
       fname = key.readLine();
       
       if (!fname.equals("")) {
-        System.out.print("Last Name: ");
+        System.out.print("Last Name (Ex. Yang): ");
         lname = key.readLine();
-        System.out.print("Address: ");
+        System.out.print("Address (Ex. 7 Presto Ave): ");
         address = key.readLine();
-        System.out.print("Card Number: ");
+        System.out.print("Card Number (Ex. 1111-2222-3333-4444): ");
         cardNumber = key.readLine();
 
         // Creates a new customer object 
