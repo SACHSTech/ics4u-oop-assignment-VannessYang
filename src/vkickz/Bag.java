@@ -4,7 +4,7 @@ import vkickz.*;
 
 /**
 * OOP Assignment VKICKZ Auction Simulation (Bag Subclass)
-* @atuhor: V. Yang
+* @author: V. Yang
 * 
 */
 public class Bag extends Item{
@@ -15,12 +15,14 @@ public class Bag extends Item{
 
   /**
   * Constructor - creates a new bag instance
+  *
   * @param item - the item type 
   * @param theBrand - the brand of the bag 
   * @param colour - the colour of the bag 
   * @param thePrice - the price of the bag  
   * @param bag - the bag type 
   * @param theSeason - the season of the bag 
+  * @author: V. Yang
   */
   public Bag(String item, String theBrand, String colour, double thePrice, String bag, String theSeason){
     super(item, theBrand, colour, thePrice);
@@ -29,7 +31,10 @@ public class Bag extends Item{
   }
 
   /**
-  * Getter for Bag Type   
+  * Getter for Bag Type  
+  * 
+  * @return the bag type 
+  * @author: V. Yang
   */
   public String getBagType(){
     return bagType;
@@ -37,6 +42,9 @@ public class Bag extends Item{
 
   /**
   * Getter for Season of the Bag  
+  *
+  * @return the season of the bag 
+  * @author: V. Yang
   */
   public String getSeason(){
     return season;
@@ -44,6 +52,9 @@ public class Bag extends Item{
 
   /**
   * toString to return values of variables 
+  * 
+  * @return a description of the bag for auction 
+  * @author: V. Yang
   */
   public String toString(){
     return "The " + this.getItemType() + " available is the " + this.getBrand() + " " + season + " " + this.getColourway() + " " + bagType + ". The starting price is $" + this.getPrice();

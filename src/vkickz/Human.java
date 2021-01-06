@@ -2,7 +2,7 @@ package vkickz;
 
 /**
 * OOP Assignment VKICKZ Auction Simulation (Human Superclass)
-* @atuhor: V. Yang
+* @author: V. Yang
 * 
 */
 public class Human{
@@ -13,8 +13,10 @@ public class Human{
 
   /**
   * Constructor - creates a new human instance
+  *
   * @param fname - the human first name
   * @param lname - the human last name
+  * @author: V. Yang
   */
   public Human(String fname, String lname){
     firstName = fname;
@@ -23,6 +25,9 @@ public class Human{
 
   /**
   * Getter for Human first name 
+  *
+  * @return the first name of the human
+  * @author: V. Yang
   */
   public String getFirstName(){
     return firstName;
@@ -30,6 +35,9 @@ public class Human{
 
   /**
   * Getter for Human last name   
+  *
+  * @return the last name of the human 
+  * @author: V. Yang
   */
   public String getLastName(){
     return lastName;

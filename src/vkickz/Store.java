@@ -18,9 +18,11 @@ public class Store {
 
   /**
   * Constructor - creates a new store instance
+  *
   * @param theStaff - store has staff
   * @param theBag - store has bags
   * @param theShoe - store has shoes
+  * @author: V. Yang
   */
   public Store(Staff theStaff, Bag theBag, Shoe theShoe){
     this.staff = theStaff;

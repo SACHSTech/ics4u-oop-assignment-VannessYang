@@ -2,7 +2,7 @@ package vkickz;
 
 /**
 * OOP Assignment VKICKZ Auction Simulation (Item Superclass)
-* @atuhor: V. Yang
+* @author: V. Yang
 * 
 */
 public class Item{
@@ -15,10 +15,12 @@ public class Item{
 
   /**
   * Constructor - creates a new item instance
+  *
   * @param item - the type of item 
   * @param theBrand - the brand of the item
   * @param colour - the colour of the item
   * @param thePrice - the price of the item  
+  * @author: V. Yang
   */
   public Item(String item, String theBrand, String colour, double thePrice){
     this.itemType = item;
@@ -29,6 +31,9 @@ public class Item{
 
   /**
   * Getter for the item type 
+  *
+  * @return the item type 
+  * @author: V. Yang
   */
   public String getItemType(){
     return itemType;
@@ -36,6 +41,9 @@ public class Item{
 
   /**
   * Getter for the item brand 
+  * 
+  * @return the brand of the item 
+  * @author: V. Yang
   */
   public String getBrand(){
     return brand;
@@ -43,6 +51,9 @@ public class Item{
 
   /**
   * Getter for the item colourway
+  *
+  * @return the colourway of the item 
+  * @author: V. Yang
   */
   public String getColourway(){
     return colourway;
@@ -50,6 +61,9 @@ public class Item{
 
   /**
   * Getter for the item price
+  *
+  * @return the price of the item 
+  * @author: V. Yang
   */
   public double getPrice(){
     return price;

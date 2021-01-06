@@ -6,10 +6,16 @@ import java.util.ArrayList;
 
 /**
 * OOP Assignment VKICKZ Auction Simulation (StoreMain Class)
-* @atuhor: V. Yang
+* @author: V. Yang
 * 
 */
 public class StoreMain{
+  
+  /**
+  * Main file to test the program and call the methods for the auction 
+  *
+  * @author: V. Yang
+  */
   public static void main(String[] args) throws IOException{
     welcome();
     auction();
@@ -18,6 +24,8 @@ public class StoreMain{
 
   /**
   * Displays the logo and the welcoming screen
+  *
+  * @author: V. Yang
   */
   public static void welcome() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
@@ -53,6 +61,8 @@ public class StoreMain{
 
   /**
   * Simulates an auction for two items
+  * 
+  * @author: V. Yang
   */
   public static void auction() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
@@ -250,6 +260,8 @@ public class StoreMain{
 
   /**
   * Displays the logo and the closing screen
+  *
+  * @author: V. Yang
   */
   public static void closing() throws IOException{
     BufferedReader key = new BufferedReader (new InputStreamReader(System.in));
@@ -274,4 +286,4 @@ public class StoreMain{
     next = key.readLine();
   }
 
-}
+} 
