@@ -3,7 +3,7 @@
 
 [*see instructions for details*](Instructions.md)
 
-<img src="https://repl.it/@VannessYang/ics4u-oop-assignment-VannessYang#src/vkickz/Computer%20Science-OOP%20Assignment%20Diagram.png">  
+<img src="https://github.com/SACHSTech/ics4u-oop-assignment-VannessYang/blob/main/src/vkickz/Computer%20Science-OOP%20Assignment%20Diagram.png">  
 
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
