@@ -3,7 +3,7 @@
 
 [*see instructions for details*](Instructions.md)
 
-*Insert Class Diagram here*  
+<img src="https://repl.it/@VannessYang/ics4u-oop-assignment-VannessYang#src/vkickz/Computer%20Science-OOP%20Assignment%20Diagram.jpg">  
 
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
